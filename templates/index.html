@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Symbol Form</title>
+</head>
+<body bgcolor="#90EE90">
+    <center>
+    <h1>NIFTY 50 NAVIGATOR</h1>
+    </center>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <center>
+    <form action = "http://localhost:5000/inpform" method="POST">
+        <label for="stockSymbol"><font size="5">ENTER STOCK SYMBOL</font></label>
+        <select id="stockSymbol" name="stockSymbol">
+            <option value="RELIANCE.NS">Reliance Industries</option>
+            <option value="TCS.NS">TCS</option>
+            <option value="HDFCBANK.NS">HDFC Bank</option>
+            <option value="INFY.NS">Infosys</option>
+            <option value="HINDUNILVR.NS">Hindustan Unilever</option>
+            <option value="ICICIBANK.NS">ICICI Bank</option>
+            <option value="SBIN.NS">State Bank of India</option>
+            <option value="KOTAKBANK.NS">Kotak Mahindra Bank</option>
+            <option value="BHARTIARTL.NS">Bharti Airtel</option>
+            <option value="LT.NS">Larsen & Toubro</option>
+            <option value="HCLTECH.NS">HCL Technologies</option>
+            <option value="AXISBANK.NS">Axis Bank</option>
+            <option value="ASIANPAINT.NS">Asian Paints</option>
+            <option value="ITC.NS">ITC</option>
+            <option value="BAJFINANCE.NS">Bajaj Finance</option>
+            <option value="MARUTI.NS">Maruti Suzuki</option>
+            <option value="TITAN.NS">Titan Company</option>
+            <option value="ULTRACEMCO.NS">UltraTech Cement</option>
+            <option value="WIPRO.NS">Wipro</option>
+            <option value="TECHM.NS">Tech Mahindra</option>
+            <option value="SUNPHARMA.NS">Sun Pharmaceutical</option>
+            <option value="POWERGRID.NS">Power Grid Corporation</option>
+            <option value="TATASTEEL.NS">Tata Steel</option>
+            <option value="NESTLEIND.NS">Nestlé India</option>
+            <option value="JSWSTEEL.NS">JSW Steel</option>
+            <option value="NTPC.NS">NTPC</option>
+            <option value="GRASIM.NS">Grasim Industries</option>
+            <option value="COALINDIA.NS">Coal India</option>
+            <option value="ONGC.NS">ONGC</option>
+            <option value="BRITANNIA.NS">Britannia Industries</option>
+            <option value="CIPLA.NS">Cipla</option>
+            <option value="ADANIPORTS.NS">Adani Ports</option>
+            <option value="DRREDDY.NS">Dr. Reddy's Laboratories</option>
+            <option value="HDFCLIFE.NS">HDFC Life</option>
+            <option value="BAJAJ-AUTO.NS">Bajaj Auto</option>
+            <option value="HEROMOTOCO.NS">Hero MotoCorp</option>
+            <option value="HINDALCO.NS">Hindalco Industries</option>
+            <option value="EICHERMOT.NS">Eicher Motors</option>
+            <option value="DIVISLAB.NS">Divi's Laboratories</option>
+            <option value="APOLLOHOSP.NS">Apollo Hospitals</option>
+            <option value="M&M.NS">Mahindra & Mahindra</option>
+            <option value="SHREECEM.NS">Shree Cement</option>
+            <option value="INDUSINDBK.NS">IndusInd Bank</option>
+            <option value="TATAMOTORS.NS">Tata Motors</option>
+            <option value="SBILIFE.NS">SBI Life Insurance</option>
+            <option value="HAVELLS.NS">Havells India</option>
+            <option value="DLF.NS">DLF</option>
+            <option value="PIDILITIND.NS">Pidilite Industries</option>
+            <option value="ICICIPRULI.NS">ICICI Prudential Life Insurance</option>
+            <option value="ADANIENT.NS">Adani Enterprises</option>
+
+        </select>
+        <button type="submit" name="button" value="Predicted Prices">Predicted Prices</button>
+        <button type="submit" name="button" value="Time Series For Stock">Time Series For Stock</button>
+    </form>
+    </center>
+
+    {% if stock_symbol %}
+        <p>You entered: {{ stock_symbol }}</p>
+    {% endif %}
+
+</body>
+</html>
