@@ -76,3 +76,6 @@ This project provides a Flask-based UI for stock price prediction using historic
 ## License
 This project is open-source and available under the [MIT License](LICENSE).
 
+## Future works 
+- Better CSS integration
+- Add news extraction and analyst view
